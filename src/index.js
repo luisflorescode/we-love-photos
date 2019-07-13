@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "bootstrap/dist/css/bootstrap.css";
 
 import "./index.css";
-import Header from "./components/Header";
+import Home from "./pages/Home";
+
 const container = document.getElementById("app");
 
-const element = <Header />;
-
-ReactDOM.render(element, container);
+ReactDOM.render(<Home />, container);

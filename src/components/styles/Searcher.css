@@ -1,0 +1,15 @@
+.searcher-container {
+  width: 60%;
+  margin: 40px auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searcher-text {
+  margin: 0 10px;
+}
+
+.searcher-container input {
+  width: 90%;
+}
