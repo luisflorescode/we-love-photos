@@ -1,0 +1,32 @@
+.userProfile-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 35px 0;
+}
+
+.userProfile-link {
+  display: inherit;
+}
+
+.userProfile-imgContainer {
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.userProfile-info {
+  margin: 0 20px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.info-username {
+  font-size: 1.4em;
+}
+
+.info-name {
+  font-size: 0.9em;
+}

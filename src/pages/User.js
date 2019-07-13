@@ -1,9 +1,8 @@
 import React from "react";
 
-import Searcher from "../components/Searcher";
-import ResultList from "../components/ResultList";
+import UserProfile from "../components/UserProfile";
 
-class Home extends React.Component {
+class User extends React.Component {
   state = {
     loading: true,
     error: null,
@@ -19,7 +18,9 @@ class Home extends React.Component {
 
     try {
       const response = await fetch(
-        "https://jsonplaceholder.typicode.com/users"
+        `http://jsonplaceholder.typicode.com/users/${
+          this.props.match.params.userId
+        }`
       );
       const data = await response.json();
       this.setState({ loading: false, data: data });
@@ -39,11 +40,10 @@ class Home extends React.Component {
 
     return (
       <React.Fragment>
-        <Searcher />
-        <ResultList results={this.state.data} />
+        <UserProfile user={this.state.data} />
       </React.Fragment>
     );
   }
 }
 
-export default Home;
+export default User;

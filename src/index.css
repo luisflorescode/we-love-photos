@@ -3,6 +3,12 @@ body {
   font-family: "Pontano Sans", sans-serif;
 }
 
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -10,6 +16,21 @@ h4,
 h5,
 h6,
 span,
+strong,
 header {
   font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin: 35px 0;
 }
