@@ -1,0 +1,40 @@
+.result-container {
+  width: 60%;
+  margin: auto;
+  padding: 10px 20px 10px 10px;
+  border: 1px solid black;
+  border-radius: 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-profile {
+  width: 85%;
+  display: inherit;
+  align-items: inherit;
+}
+
+.result-photoContainer {
+  width: 45px;
+  height: 45px;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.result-user {
+  width: 85%;
+  margin: 0 10px;
+  display: inherit;
+  flex-direction: column;
+  justify-content: inherit;
+  align-items: flex-start;
+}
+
+.user-username {
+  font-size: 0.95em;
+}
+
+.user-name {
+  font-size: 0.85em;
+}
