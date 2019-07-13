@@ -1,15 +1,40 @@
 import React from "react";
 
-import Header from "../components/Header";
 import Searcher from "../components/Searcher";
-import Result from "../components/Result";
+import ResultList from "../components/ResultList";
 
 class Home extends React.Component {
+  state = {
+    loading: true,
+    error: null,
+    data: undefined
+  };
+
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  fetchData = async () => {
+    this.setState({ loading: true, error: null });
+
+    try {
+      const response = await fetch("http://jsonplaceholder.typicode.com/users");
+      const data = await response.json();
+      this.setState({ loading: false, data: data });
+    } catch (error) {
+      this.setState({ loading: false, error: error });
+    }
+  };
+
   render() {
+    if (this.state.loading) {
+      return "Loading...";
+    }
+
     return (
       <React.Fragment>
         <Searcher />
-        <Result />
+        <ResultList results={this.state.data} />
       </React.Fragment>
     );
   }
