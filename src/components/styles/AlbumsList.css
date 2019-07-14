@@ -1,0 +1,28 @@
+.albumsList-title {
+  margin: 20px 45px;
+  font-size: 1em;
+}
+
+.container {
+  padding: 0;
+}
+
+.album-imgContainer {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.album-image {
+  width: 100%;
+}
+
+.album-title {
+  margin: auto auto 15px auto;
+  width: 150px;
+  font-size: 0.9em;
+  text-align: center;
+}

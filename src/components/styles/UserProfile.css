@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 35px 0;
+  margin: 20px 45px;
 }
 
 .userProfile-link {
@@ -11,8 +11,8 @@
 
 .userProfile-imgContainer {
   margin: 0;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border: 1px solid black;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .info-username {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .info-name {

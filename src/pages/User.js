@@ -1,12 +1,14 @@
 import React from "react";
 
 import UserProfile from "../components/UserProfile";
+import AlbumsList from "../components/AlbumsList";
 
 class User extends React.Component {
   state = {
     loading: true,
     error: null,
-    data: undefined
+    userData: undefined,
+    albumsData: undefined
   };
 
   componentDidMount() {
@@ -16,17 +18,30 @@ class User extends React.Component {
   fetchData = async () => {
     this.setState({ loading: true, error: null });
 
-    try {
-      const response = await fetch(
-        `http://jsonplaceholder.typicode.com/users/${
+    Promise.all([
+      fetch(
+        `https://jsonplaceholder.typicode.com/users/${
           this.props.match.params.userId
         }`
-      );
-      const data = await response.json();
-      this.setState({ loading: false, data: data });
-    } catch (error) {
-      this.setState({ loading: false, error: error });
-    }
+      ),
+      fetch(
+        `http://jsonplaceholder.typicode.com/albums?userId=${
+          this.props.match.params.userId
+        }`
+      )
+    ])
+      .then(([userRes, albumsRes]) =>
+        Promise.all([userRes.json(), albumsRes.json()])
+      )
+      .catch(error => this.setState({ loading: false, error: error }))
+      .then(([userData, albumsData]) =>
+        this.setState({
+          loading: false,
+          userData: userData,
+          albumsData: albumsData
+        })
+      )
+      .catch(error => this.setState({ loading: false, error: error }));
   };
 
   render() {
@@ -40,7 +55,8 @@ class User extends React.Component {
 
     return (
       <React.Fragment>
-        <UserProfile user={this.state.data} />
+        <UserProfile user={this.state.userData} />
+        <AlbumsList albums={this.state.albumsData} />
       </React.Fragment>
     );
   }
