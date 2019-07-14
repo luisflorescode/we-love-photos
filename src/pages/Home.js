@@ -1,6 +1,5 @@
 import React from "react";
 
-import Searcher from "../components/Searcher";
 import ResultList from "../components/ResultList";
 
 class Home extends React.Component {
@@ -37,12 +36,7 @@ class Home extends React.Component {
       return `Error: ${this.state.error.message}`;
     }
 
-    return (
-      <React.Fragment>
-        <Searcher />
-        <ResultList results={this.state.data} />
-      </React.Fragment>
-    );
+    return <ResultList results={this.state.data} />;
   }
 }
 

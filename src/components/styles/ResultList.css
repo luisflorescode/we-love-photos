@@ -1,3 +1,19 @@
+.searcher-container {
+  width: 100%;
+  margin: 40px auto 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searcher-text {
+  margin: 0 10px 0 0;
+}
+
+.searcher-container input {
+  width: 90%;
+}
+
 .resultList-item {
   width: 100%;
   margin: 10px auto;
