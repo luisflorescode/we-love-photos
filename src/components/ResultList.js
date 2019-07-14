@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/ResultList.css";
+import UserPhoto from "./UserPhoto";
 
 function useSearchUsers(users) {
   const [query, setQuery] = React.useState("");
@@ -64,7 +65,13 @@ function ResultList(props) {
               <Link to={`/user/${result.id}`}>
                 <div className="result-container">
                   <div className="result-profile">
-                    <figure className="result-photoContainer" />
+                    <figure className="result-photoContainer">
+                      <UserPhoto
+                        className="result-photo"
+                        email={result.email}
+                        alt="UserPhoto"
+                      />
+                    </figure>
                     <div className="result-user">
                       <span className="user-username">@{result.username}</span>
                       <span className="user-name">{result.name}</span>

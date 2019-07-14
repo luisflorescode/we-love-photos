@@ -25,7 +25,7 @@ class User extends React.Component {
         }`
       ),
       fetch(
-        `http://jsonplaceholder.typicode.com/albums?userId=${
+        `https://jsonplaceholder.typicode.com/albums?userId=${
           this.props.match.params.userId
         }`
       )
