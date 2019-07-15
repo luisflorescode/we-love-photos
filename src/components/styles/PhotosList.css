@@ -1,0 +1,17 @@
+.container {
+  padding: 0;
+}
+
+.photo-imgContainer {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  margin-bottom: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photo-image {
+  width: 100%;
+}

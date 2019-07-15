@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./styles/AlbumsList.css";
 
-class ResultList extends React.Component {
+class AlbumsList extends React.Component {
   render() {
     return (
       <React.Fragment>
@@ -14,7 +14,7 @@ class ResultList extends React.Component {
               return (
                 <li className="albumsList-item col-4" key={album.id}>
                   <figure className="album-imgContainer">
-                    <Link to={`/album/${album.id}`}>
+                    <Link to={`/album/${this.props.user.id}/${album.id}`}>
                       <img
                         className="album-image"
                         src={`https://picsum.photos/200/300?random=${
@@ -35,4 +35,4 @@ class ResultList extends React.Component {
   }
 }
 
-export default ResultList;
+export default AlbumsList;
