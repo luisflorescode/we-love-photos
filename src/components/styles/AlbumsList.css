@@ -1,6 +1,6 @@
 .albumsList-title {
-  margin: 20px 45px;
-  font-size: 1em;
+  margin: 1.5vw 0 1vw 3vw;
+  font-size: 1.75vw;
 }
 
 .container {
@@ -9,9 +9,9 @@
 
 .album-imgContainer {
   margin: auto;
-  width: 150px;
-  height: 150px;
-  border: 2px solid black;
+  width: 16vw;
+  height: 9vw;
+  border: 0.1vw solid black;
   margin-bottom: 5px;
   overflow: hidden;
   cursor: pointer;
@@ -23,7 +23,7 @@
 
 .album-title {
   margin: auto auto 15px auto;
-  width: 150px;
-  font-size: 0.9em;
+  width: 16vw;
+  font-size: 1vw;
   text-align: center;
 }

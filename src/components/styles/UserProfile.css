@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px 45px;
+  margin: 2vw 0 1vw 3vw;
 }
 
 .userProfile-link {
@@ -11,9 +11,11 @@
 
 .userProfile-imgContainer {
   margin: 0;
-  width: 75px;
-  height: 75px;
-  border: 1px solid black;
+  width: 5vw;
+  height: 5vw;
+  border: 0.1vw solid black;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .user-photo {
@@ -22,16 +24,16 @@
 }
 
 .userProfile-info {
-  margin: 0 20px;
+  margin: 0 1vw;
   display: inherit;
   flex-direction: column;
   justify-content: center;
 }
 
 .info-username {
-  font-size: 1em;
+  font-size: 1.5vw;
 }
 
 .info-name {
-  font-size: 0.9em;
+  font-size: 1.25vw;
 }

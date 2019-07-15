@@ -17,7 +17,7 @@ class AlbumsList extends React.Component {
                     <Link to={`/album/${this.props.user.id}/${album.id}`}>
                       <img
                         className="album-image"
-                        src={`https://picsum.photos/200/300?random=${
+                        src={`https://picsum.photos/1200/900?random=${
                           album.id
                         }}`}
                         alt="AlbumImage"
