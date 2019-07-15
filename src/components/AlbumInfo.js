@@ -6,7 +6,7 @@ import "./styles/AlbumInfo.css";
 class AlbumInfo extends React.Component {
   render() {
     const albums = this.props.userAlbums.filter(
-      album => album.id === String(this.props.id)
+      album => String(album.id) === this.props.id
     );
     return (
       <div className="albumInfo-container">

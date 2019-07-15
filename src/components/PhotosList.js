@@ -18,7 +18,7 @@ class PhotosList extends React.Component {
 
   render() {
     const albumPhotos = this.props.photos.filter(
-      albumPhoto => albumPhoto.albumId === String(this.props.id)
+      albumPhoto => String(albumPhoto.albumId) === this.props.id
     );
     return (
       <React.Fragment>
