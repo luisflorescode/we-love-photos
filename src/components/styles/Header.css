@@ -1,5 +1,6 @@
 header {
-  height: 6.5vw;
+  margin-bottom: 2.25vw;
+  height: 5vw;
   color: #ffffff;
   background-color: #ff4f00;
   display: flex;
@@ -15,7 +16,7 @@ header {
 }
 
 .header-logo {
-  width: 5vw;
+  width: 3.5vw;
 }
 
 .header-logo {
