@@ -73,7 +73,9 @@ function ResultList(props) {
                       />
                     </figure>
                     <div className="result-user">
-                      <span className="user-username">@{result.username}</span>
+                      <strong className="user-username">
+                        @{result.username}
+                      </strong>
                       <span className="user-name">{result.name}</span>
                     </div>
                   </div>
