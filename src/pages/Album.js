@@ -1,7 +1,7 @@
 import React from "react";
 
-import PhotosList from "../components/PhotosList";
 import AlbumInfo from "../components/AlbumInfo";
+import PhotosList from "../components/PhotosList";
 
 class Album extends React.Component {
   state = {

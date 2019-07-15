@@ -1,3 +1,11 @@
+.albumInfo-container {
+  margin: 3vw 0 1vw 7vw;
+}
+
 .albumInfo-title {
-  font-size: 24px;
+  font-size: 1.5vw;
+}
+
+.albumInfo-user {
+  font-size: 1.25vw;
 }

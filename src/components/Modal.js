@@ -10,7 +10,7 @@ function Modal(props) {
 
   return ReactDOM.createPortal(
     <div className="modal" onClick={props.onClose}>
-      <img src={props.url} alt="photoImg" />
+      <img className="modal-img" src={props.url} alt="photoImg" />
     </div>,
     document.getElementById("modal")
   );
