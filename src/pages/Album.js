@@ -1,6 +1,7 @@
 import React from "react";
 
 import PhotosList from "../components/PhotosList";
+import AlbumInfo from "../components/AlbumInfo";
 
 class Album extends React.Component {
   state = {
@@ -61,6 +62,11 @@ class Album extends React.Component {
 
     return (
       <React.Fragment>
+        <AlbumInfo
+          id={this.props.match.params.albumId}
+          userAlbums={this.state.albumData}
+          user={this.state.userData}
+        />
         <PhotosList
           id={this.props.match.params.albumId}
           photos={this.state.photosData}
