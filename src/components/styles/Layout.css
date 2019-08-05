@@ -13,6 +13,9 @@ body {
 
 /* Estilos para la versión móvil */
 @media screen and (max-width: 767px) {
+  body {
+    background-image: url("https://picsum.photos/1080/1920");
+  }
   .page-container {
     width: 95%;
   }
