@@ -15,6 +15,7 @@ body {
 @media screen and (max-width: 767px) {
   body {
     background-image: url("https://picsum.photos/1080/1920");
+    background-position: top;
   }
   .page-container {
     width: 95%;
