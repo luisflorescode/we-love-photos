@@ -1,20 +1,32 @@
 .albumsList-title {
-  margin: 1.5vw 0 1vw 3vw;
-  font-size: 1.75vw;
+  margin: 1.5vw auto 1vw;
+  padding: 1vw;
+  font-size: 2vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  border-radius: 0.5vw;
+  text-align: center;
 }
 
 .container {
   padding: 0;
+  display: flex;
+}
+
+.albums-grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 1% 5%;
 }
 
 .album-imgContainer {
   margin: auto;
   width: 16vw;
   height: 9vw;
-  border: 0.1vw solid black;
-  margin-bottom: 5px;
   overflow: hidden;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .album-image {
@@ -22,8 +34,39 @@
 }
 
 .album-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
   margin: auto auto 15px auto;
   width: 16vw;
   font-size: 1vw;
   text-align: center;
+  border-radius: 2.5px;
+}
+
+/* Estilos para la versión móvil */
+@media screen and (max-width: 767px) {
+  .albumsList-title {
+    font-size: 4vw;
+  }
+
+  .albumsList-item .col-4 {
+    width: 100%;
+  }
+
+  .albums-grid {
+    grid-template-columns: repeat(1, 100%);
+    grid-gap: 0;
+  }
+
+  .album-imgContainer {
+    margin: auto;
+    width: 50%;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  .album-title {
+    width: 50%;
+    font-size: 3vw;
+  }
 }

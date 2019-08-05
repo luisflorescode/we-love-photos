@@ -1,8 +1,7 @@
 .photo-imgContainer {
   margin: auto;
-  width: 10.5vw;
-  height: 10.5vw;
-  border: 2px solid black;
+  width: 9.5vw;
+  height: 9.5vw;
   margin-bottom: 0.5vw;
   overflow: hidden;
   cursor: pointer;
@@ -10,4 +9,25 @@
 
 .photo-image {
   width: 100%;
+}
+
+.grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(5, 20%);
+  grid-gap: 1% 0%;
+}
+
+/* Estilos para la versión móvil */
+@media screen and (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(2, 45%);
+    grid-gap: 0.5% 10%;
+  }
+
+  .photo-imgContainer {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
 }

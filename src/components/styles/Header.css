@@ -2,11 +2,11 @@ header {
   margin-bottom: 2.25vw;
   height: 5vw;
   color: #ffffff;
-  background-color: #ff4f00;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4vw;
+  font-size: 3.5vw;
 }
 
 .header {
@@ -16,10 +16,13 @@ header {
 }
 
 .header-logo {
-  width: 3.5vw;
+  color: red;
 }
 
-.header-logo {
-  color: #ffce00;
-  margin: 0 0.5vw;
+/* Estilos para la versión móvil */
+@media screen and (max-width: 767px) {
+  header {
+    height: 10vw;
+    font-size: 7vw;
+  }
 }

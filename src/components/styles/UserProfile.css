@@ -1,26 +1,23 @@
 .userProfile-container {
+  width: fit-content;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0 0 1vw 3vw;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .userProfile-link {
   display: inherit;
 }
 
-.userProfile-imgContainer {
-  margin: 0;
+.user-photo {
   width: 5vw;
   height: 5vw;
-  border: 0.1vw solid black;
   border-radius: 50%;
   overflow: hidden;
-}
-
-.user-photo {
-  width: 100%;
-  height: 100%;
 }
 
 .userProfile-info {
@@ -36,4 +33,23 @@
 
 .info-name {
   font-size: 1.25vw;
+}
+
+@media screen and (max-width: 767px) {
+  .userProfile-container {
+    padding: 1vw;
+  }
+
+  .user-photo {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .info-username {
+    font-size: 4vw;
+  }
+
+  .info-name {
+    font-size: 3vw;
+  }
 }
