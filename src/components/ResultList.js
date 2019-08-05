@@ -50,7 +50,7 @@ function ResultList(props) {
       <div className="searcher-container">
         <span className="searcher-text">Search</span>
         <input
-          className="form-control"
+          className="form-control inputSearch"
           type="text"
           value={query}
           onChange={event => {
@@ -65,13 +65,11 @@ function ResultList(props) {
               <Link to={`/user/${result.id}`}>
                 <div className="result-container">
                   <div className="result-profile">
-                    <figure className="result-photoContainer">
-                      <UserPhoto
-                        className="result-photo"
-                        email={result.email}
-                        alt="UserPhoto"
-                      />
-                    </figure>
+                    <UserPhoto
+                      className="result-photo"
+                      email={result.email}
+                      alt="UserPhoto"
+                    />
                     <div className="result-user">
                       <strong className="user-username">
                         @{result.username}

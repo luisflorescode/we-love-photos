@@ -9,6 +9,10 @@ a:hover {
   text-decoration: none;
 }
 
+figure {
+  margin: 0;
+}
+
 h1,
 h2,
 h3,

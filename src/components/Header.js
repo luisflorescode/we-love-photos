@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../images/logo.png";
 import "./styles/Header.css";
 
 class Header extends React.Component {
@@ -9,8 +8,13 @@ class Header extends React.Component {
     return (
       <header>
         <Link className="header" to={`/`}>
-          <img className="header-logo" src={Logo} alt="headerLogo" />
+          <span className="header-logo" role="img" aria-label="heart">
+            ❤
+          </span>
           We Love Photos
+          <span role="img" aria-label="camera">
+            📷
+          </span>
         </Link>
       </header>
     );

@@ -22,19 +22,17 @@ class PhotosList extends React.Component {
     );
     return (
       <React.Fragment>
-        <div className="container">
-          <ul className="list-unstyled row">
-            {albumPhotos.map(photo => {
-              return (
-                <li className="photoList-item col-4" key={photo.id}>
-                  <figure className="photo-imgContainer">
-                    <ModalState src={photo.thumbnailUrl} url={photo.url} />
-                  </figure>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        <ul className="list-unstyled grid">
+          {albumPhotos.map(photo => {
+            return (
+              <li className="photoList-item" key={photo.id}>
+                <figure className="photo-imgContainer">
+                  <ModalState src={photo.thumbnailUrl} url={photo.url} />
+                </figure>
+              </li>
+            );
+          })}
+        </ul>
       </React.Fragment>
     );
   }

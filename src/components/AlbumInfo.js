@@ -10,7 +10,7 @@ class AlbumInfo extends React.Component {
     );
     return (
       <div className="albumInfo-container">
-        <ul className="list-unstyled row">
+        <ul className="list-unstyled">
           {albums.map(album => {
             return (
               <li className="" key={album.id}>

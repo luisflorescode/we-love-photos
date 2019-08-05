@@ -4,5 +4,16 @@
 }
 
 body {
-  background-color: #edede7;
+  background-image: url("https://picsum.photos/3840/2160");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Estilos para la versión móvil */
+@media screen and (max-width: 767px) {
+  .page-container {
+    width: 90%;
+  }
 }

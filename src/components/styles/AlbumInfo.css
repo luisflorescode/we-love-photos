@@ -1,11 +1,26 @@
 .albumInfo-container {
-  margin: 0 0 1vw 7vw;
+  padding: 0 2.5vw;
+  margin: 0 auto;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 2.5px;
 }
 
 .albumInfo-title {
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 
 .albumInfo-user {
-  font-size: 1.25vw;
+  font-size: 1.5vw;
+}
+
+/* Estilos para la versión móvil */
+@media screen and (max-width: 767px) {
+  .albumInfo-title {
+    font-size: 4vw;
+  }
+
+  .albumInfo-user {
+    font-size: 3vw;
+  }
 }
