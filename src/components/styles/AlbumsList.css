@@ -46,7 +46,7 @@
 /* Estilos para la versión móvil */
 @media screen and (max-width: 767px) {
   .albumsList-title {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   .albumsList-item .col-4 {
@@ -60,13 +60,13 @@
 
   .album-imgContainer {
     margin: auto;
-    width: 50%;
+    width: 90%;
     height: auto;
     margin-bottom: 5px;
   }
 
   .album-title {
-    width: 50%;
-    font-size: 3vw;
+    width: 90%;
+    font-size: 4vw;
   }
 }

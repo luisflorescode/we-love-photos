@@ -17,10 +17,10 @@
 /* Estilos para la versión móvil */
 @media screen and (max-width: 767px) {
   .albumInfo-title {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   .albumInfo-user {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }

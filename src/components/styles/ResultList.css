@@ -80,7 +80,7 @@
 @media screen and (max-width: 767px) {
   .searcher-container {
     margin: 0 auto 1.75vw;
-    width: 95%;
+    width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -89,18 +89,18 @@
   }
 
   .searcher-text {
-    width: 80%;
-    font-size: 4vw;
+    width: 90%;
+    font-size: 5vw;
     margin: 1vw 4vw;
   }
 
   .inputSearch {
-    width: 80%;
+    width: 90%;
     height: 20%;
   }
 
   .result-container {
-    width: 75%;
+    width: 90%;
     padding: 2vw;
   }
 
@@ -112,15 +112,15 @@
   }
 
   .user-username {
-    font-size: 2.5vw;
+    font-size: 4vw;
   }
 
   .user-name {
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .user-see {
-    font-size: 2.5vw;
+    font-size: 3vw;
     margin-right: 1.25vw;
   }
 }

@@ -41,15 +41,15 @@
   }
 
   .user-photo {
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
   }
 
   .info-username {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 
   .info-name {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }

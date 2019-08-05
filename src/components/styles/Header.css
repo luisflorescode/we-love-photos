@@ -22,7 +22,7 @@ header {
 /* Estilos para la versión móvil */
 @media screen and (max-width: 767px) {
   header {
-    height: 10vw;
-    font-size: 7vw;
+    height: 15vw;
+    font-size: 9vw;
   }
 }
