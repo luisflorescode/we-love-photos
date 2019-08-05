@@ -26,7 +26,6 @@
   height: 9vw;
   overflow: hidden;
   cursor: pointer;
-  margin-bottom: 5px;
 }
 
 .album-image {
@@ -40,7 +39,6 @@
   width: 16vw;
   font-size: 1vw;
   text-align: center;
-  border-radius: 2.5px;
 }
 
 /* Estilos para la versión móvil */
@@ -62,7 +60,6 @@
     margin: auto;
     width: 90%;
     height: auto;
-    margin-bottom: 5px;
   }
 
   .album-title {

@@ -62,23 +62,21 @@ function ResultList(props) {
         {filteredUsers.map(result => {
           return (
             <li className="resultList-item" key={result.id}>
-              <Link to={`/user/${result.id}`}>
-                <div className="result-container">
-                  <div className="result-profile">
-                    <UserPhoto
-                      className="result-photo"
-                      email={result.email}
-                      alt="UserPhoto"
-                    />
-                    <div className="result-user">
-                      <strong className="user-username">
-                        @{result.username}
-                      </strong>
-                      <span className="user-name">{result.name}</span>
-                    </div>
+              <Link className="result-container" to={`/user/${result.id}`}>
+                <div className="result-profile">
+                  <UserPhoto
+                    className="result-photo"
+                    email={result.email}
+                    alt="UserPhoto"
+                  />
+                  <div className="result-user">
+                    <strong className="user-username">
+                      @{result.username}
+                    </strong>
+                    <span className="user-name">{result.name}</span>
                   </div>
-                  <span className="user-see">See Albums</span>
                 </div>
+                <span className="user-see">See Albums</span>
               </Link>
             </li>
           );

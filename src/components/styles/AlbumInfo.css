@@ -14,6 +14,10 @@
   font-size: 1.5vw;
 }
 
+.albumInfo-username :hover {
+  color: rgba(0, 162, 255, 0.795);
+}
+
 /* Estilos para la versión móvil */
 @media screen and (max-width: 767px) {
   .albumInfo-title {

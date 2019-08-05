@@ -17,9 +17,11 @@ class AlbumInfo extends React.Component {
                 <h1 className="albumInfo-title">{album.title}</h1>
                 <span className="albumInfo-user">
                   <span>by </span>
-                  <Link to={`/user/${this.props.user.id}`}>
-                    @{this.props.user.username}
-                  </Link>
+                  <span className="albumInfo-username">
+                    <Link to={`/user/${this.props.user.id}`}>
+                      @{this.props.user.username}
+                    </Link>
+                  </span>
                 </span>
               </li>
             );

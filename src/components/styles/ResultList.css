@@ -22,6 +22,10 @@
   height: 20%;
 }
 
+.resultList-item :hover {
+  color: rgba(0, 162, 255, 0.795);
+}
+
 .result-container {
   color: white;
   padding: 0.5vw;
